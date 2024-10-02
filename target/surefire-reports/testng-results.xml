@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-09-08T21:04:18 IST" name="Suite" finished-at="2024-09-08T21:04:18 IST" duration-ms="107">
+    <groups>
+      <group name="aman">
+        <method signature="Mul.m9()[pri:0, instance:Multi.Mul@7ec7ffd3]" name="m9" class="Multi.Mul"/>
+      </group> <!-- aman -->
+      <group name="regression">
+        <method signature="Mul.m5()[pri:0, instance:Multi.Mul@7ec7ffd3]" name="m5" class="Multi.Mul"/>
+        <method signature="Mul2.m50()[pri:0, instance:Multi.Mul2@6379eb]" name="m50" class="Multi.Mul2"/>
+      </group> <!-- regression -->
+      <group name="smoke">
+        <method signature="Mul.m2()[pri:0, instance:Multi.Mul@7ec7ffd3]" name="m2" class="Multi.Mul"/>
+        <method signature="Mul.m5()[pri:0, instance:Multi.Mul@7ec7ffd3]" name="m5" class="Multi.Mul"/>
+        <method signature="Mul.m9()[pri:0, instance:Multi.Mul@7ec7ffd3]" name="m9" class="Multi.Mul"/>
+        <method signature="Mul2.m2o()[pri:0, instance:Multi.Mul2@6379eb]" name="m2o" class="Multi.Mul2"/>
+        <method signature="Mul2.m50()[pri:0, instance:Multi.Mul2@6379eb]" name="m50" class="Multi.Mul2"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test started-at="2024-09-08T21:04:18 IST" name="Test" finished-at="2024-09-08T21:04:18 IST" duration-ms="107">
+      <class name="Multi.Mul">
+        <test-method signature="m2()[pri:0, instance:Multi.Mul@7ec7ffd3]" started-at="2024-09-08T21:04:18 IST" name="m2" finished-at="2024-09-08T21:04:18 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- m2 -->
+        <test-method signature="m5()[pri:0, instance:Multi.Mul@7ec7ffd3]" started-at="2024-09-08T21:04:18 IST" name="m5" finished-at="2024-09-08T21:04:18 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- m5 -->
+        <test-method signature="m9()[pri:0, instance:Multi.Mul@7ec7ffd3]" started-at="2024-09-08T21:04:18 IST" name="m9" finished-at="2024-09-08T21:04:18 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- m9 -->
+      </class> <!-- Multi.Mul -->
+      <class name="Multi.Mul2">
+        <test-method signature="m2o()[pri:0, instance:Multi.Mul2@6379eb]" started-at="2024-09-08T21:04:18 IST" name="m2o" finished-at="2024-09-08T21:04:18 IST" duration-ms="10" status="FAIL">
+          <exception class="junit.framework.AssertionFailedError">
+            <full-stacktrace>
+              <![CDATA[junit.framework.AssertionFailedError
+at junit.framework.Assert.fail(Assert.java:47)
+at junit.framework.Assert.fail(Assert.java:53)
+at Multi.Mul2.m2o(Mul2.java:16)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- junit.framework.AssertionFailedError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- m2o -->
+        <test-method signature="m50()[pri:0, instance:Multi.Mul2@6379eb]" started-at="2024-09-08T21:04:18 IST" name="m50" finished-at="2024-09-08T21:04:18 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- m50 -->
+      </class> <!-- Multi.Mul2 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
