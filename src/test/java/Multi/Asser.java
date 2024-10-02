@@ -8,9 +8,9 @@ public class Asser {
 
 	@Test
 	public void m() {
-		
-		Assert.assertEquals(12,12);
-		
+		String str="12fasf2356fa";
+	String s=str.replaceAll("[^0-9]", "");	
+	System.out.println(s );
 		
 	}
 	
